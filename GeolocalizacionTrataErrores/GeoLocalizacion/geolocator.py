@@ -110,7 +110,7 @@ with open ("empresasCoordenadas.csv","w+",newline='') as empresasf:
 		val=val.replace(",","").replace("\t","").replace(";","").replace('\n','').replace('\v','').replace('\r','').replace(',','')
 		val= val+ " "
 		## ESTO PUEDE SER PARA HACER LAS COLUMNAS writer.writerow['Direccion', 'Coordenadas']
-		writer.writerow([val,',',coordX[cuentaCoord],',',coordY[cuentaCoord]]) #AÑADIMOS ,coord DENTRO DE LOS CORCHETES
+		writer.writerow([val,',',coordX[cuentaCoord],',',coordY[cuentaCoord]]) #ANHADIMOS ,coord DENTRO DE LOS CORCHETES
 		cuentaCoord=cuentaCoord+1
 	del writer
 	empresasf.close()
