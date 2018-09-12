@@ -75,7 +75,7 @@ hoja=copia.sheet_by_name('Hoja1')
 direcciones=[]
 contador=0
 cuentaCoord=0
-with open ("empresasCoordenadas.csv","w+",newline='') as empresasf:
+with open ("empresasCoordenadas.csv","w+") as empresasf:
 	for i in range(1,hoja.nrows):
 		coord=[]
 		var=hoja.cell(i,5).value + "," + hoja.cell(i,6).value + " " + (hoja.cell(i,7).value)
