@@ -28,7 +28,7 @@ def geoloc(direccion):
 	try:
 		con=0
 		while True:
-			#Este if filtra para las ubicaciones que hay en ESPAÑA
+			#Este if filtra para las ubicaciones que hay en ESPANHA
 			if("Spain" in results[con]['formatted_address']):
 				
 				location=results[con]['geometry']['location']
